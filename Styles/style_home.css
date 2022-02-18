@@ -1,0 +1,44 @@
+/*Dividing the screen between banner and description*/
+section
+{
+    height: 50%;
+}
+
+/*Banner*/
+section:first-child 
+{
+    background-image: url("/images/banderole_ice.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*Responsive banner*/
+@media only screen and (max-device-width: 480px)
+{
+    section:first-child 
+    {
+        background-size: contain;
+        height: 10%;
+    }
+}
+
+/*Description (second section)*/
+section:last-child 
+{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #f8f8f8
+}
+
+/*Paragraph*/
+p 
+{
+    padding-top: 1%;
+}
+
+/*Calculating the height of the main (page - overlay of header)*/
+main
+{
+    height: calc(100% - 45px);
+}

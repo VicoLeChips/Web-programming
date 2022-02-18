@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ICE Efrei</title>
+        <link rel="stylesheet" href="Styles/style_main.css">
+        <link rel="stylesheet" href="Styles/style_inscription.css">
+        <link rel="icon" type="image/png" href="/images/logo.png"/>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--Navigation Bar-->
+            <nav class="mobile-menu">
+                <!--Label for burger effect (responsive)-->
+                <label for="show-menu" class="show-menu">
+                    <span>Menu</span>
+                  <div class="lines"></div>
+                </label>
+                <input type="checkbox" id="show-menu">
+                <!--List of the different pages-->
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="poles.html">Nos Pôles</a></li>
+                    <li><a href="projets.html">Nos projets</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Main-->
+        <main>
+            <!--Container for the form-->
+            <div class="container">
+                <!--Inscription Form-->
+                <form class="inscription" action="">
+                    <!--Form Title-->
+                    <h3>Formulaire d'inscription</h3>
+                    <!--Form Sub-Title--> 
+                    <h4>Nous t'ajouterons dès que possible</h4>
+                    <!--Name input--> 
+                    <fieldset>
+                        <input placeholder="Nom" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <!--Prénom input--> 
+                    <fieldset>
+                        <input placeholder="Prénom" type="text" tabindex="2" required autofocus>
+                    </fieldset>
+                    <!--Mail input--> 
+                    <fieldset>
+                        <input placeholder="Mail" type="email" tabindex="3" required>
+                    </fieldset>
+                    <!--Promotion input--> 
+                    <fieldset>
+                        <input placeholder="Promotion" type="text" tabindex="4" required autofocus>
+                    </fieldset>
+                    <!--Téléphone input--> 
+                    <fieldset>
+                        <input placeholder="Téléphone" type="tel" tabindex="5" required>
+                    </fieldset>
+                    <!--Discord input--> 
+                    <fieldset>
+                        <input placeholder="Discord" type="text" tabindex="6">
+                    </fieldset>
+                    <!--Submit Button--> 
+                    <fieldset>
+                        <button name="btnSubmit" type="button" id="inscription-submit">Envoyer</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!--PayPal Button-->
+            <div class="paypal-button-container"></div>
+
+            <!--Dynamic table (once the form is filled)-->
+            <div class = "table">
+                <table class = "users">
+                    <!--Merge the first line with all columns (Table Title)-->
+                    <tr>
+                        <th colspan = "6" class = "noBorder">Users</th>
+                    </tr>
+                    <!--Table's Columns-->
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Mail</th>
+                        <th>Promotion</th>
+                        <th>Téléphone</th>
+                        <th>Discord</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <!--Copyright-->
+            <div class="copyright">
+              <p>&copy 2021 - ICE Efrei</p>
+            </div>
+
+            <!--Social Media-->
+            <div class="social">
+              <a href="contact.html" class="contact">Contact Us</a>
+              <a href="#" class="facebook">f</a>
+              <a href="#" class="instagram">i</a>
+              <a href="#" class="linkedin">in</a>
+            </div>
+        </footer>
+
+        <!--PayPal Script for the payment method (has been authorized by our teacher)-->
+        <script src="https://www.paypal.com/sdk/js?client-id=AbgcQZJ52Ku3beMX4I8lFSsY7v3RCdwQnQZ9v5FKCoJsR3II2SAOSm5W_3F7jyAhD50BYiPHOheGVoMN&currency=EUR"></script>
+        
+        <!--Inscription page script (dynamic table)-->
+        <script src="Scripts/script_inscription.js"></script>
+    </body>
+</html>

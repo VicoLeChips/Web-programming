@@ -1,0 +1,154 @@
+/*Form container*/
+.container 
+{
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*Font of input + button*/
+.inscription input[type="text"], 
+.inscription input[type="email"], 
+.inscription input[type="tel"],
+.inscription button
+{ 
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+}
+
+/*Form*/
+.inscription 
+{
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+
+/*Form Title*/
+.inscription h3 
+{
+  color: #F96;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/*Form Sub-Title*/
+.inscription h4 
+{
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+/*Sets of fields of the user*/
+fieldset 
+{
+  border: medium none !important;
+  margin: 0 -10px 10px;
+  min-width: 100%;
+  width: 100%;
+}
+
+/*All inputs*/
+.inscription input[type="text"], 
+.inscription input[type="email"], 
+.inscription input[type="tel"]
+{
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+/*All input when mouse over*/
+.inscription input[type="text"]:hover, 
+.inscription input[type="email"]:hover, 
+.inscription input[type="tel"]:hover
+{
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #AAA;
+}
+
+/*Submit Button*/
+.inscription button
+{
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #04344C;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/*Submit button when mouse over*/
+.inscription button:hover 
+{
+  background:#09C;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/*Target button when it is activated by the user*/
+.inscription button:active 
+{ 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+/*Target button when it receives the focus (by mouse)*/
+.inscription input:focus
+{
+  outline: 0;
+  border: 1px solid #999;
+}
+
+/*PayPal Button*/
+.paypal-button-container
+{
+  display: none;
+  margin-left: 40%;
+}
+
+/*Table*/
+table 
+{
+  border-collapse: collapse;
+}
+
+/*Class Dynamic Table*/
+.table
+{
+  margin-left: 30%;
+  margin-top: 1px;
+  display: none;
+}
+
+/*Table's element*/
+th, td 
+{
+  border: 1px solid white;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: white;
+}
+
+/*Delete border when mergin the first line with all columns (Table Title)*/
+.noBorder 
+{
+  border: none;
+}
+
+/*Main*/
+main
+{
+  height: 1100px
+}
+
